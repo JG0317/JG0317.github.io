@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Hello World | JG&#39;s blog</title>
+  <title itemprop="name">搭建个人博客 | JG&#39;s blog</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -387,26 +387,59 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
           <header class="entry-header">
-            <h1 class="entry-title">Hello World</h1>
-            <p class="entry-census">&nbsp;·&nbsp;2020-9-17&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
+            <h1 class="entry-title">搭建个人博客</h1>
+            <p class="entry-census">&nbsp;·&nbsp;2020-9-21&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
 
             <hr>
           </header>
         
         <div class="entry-content">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <p>搭建个人blog的第一步是下载Node.js, Google搜索Nodejs.org进入官网。</p>
+<p><img src="01.png"></p>
+<p>(1)下载稳定版本（如上图红圈所示）。<br>(2)下载后查看是否安装成功，显示版本号。</p>
+<p><img src="02.png"></p>
+<p>通过淘宝镜像下载cnpm, 并查看cnpm的信息。</p>
+<p><img src="03.png"></p>
+<p>接下来安装hexo-cli(hexo博客框架)。</p>
+<p><img src="04.jpg"></p>
+<p>查看安装是否成功。</p>
+<p><img src="05.png"></p>
+<p>查看路径,输入chdir。</p>
+<p><img src="06.png"></p>
+<p>输入md blog,在该路径下建立一个名为blog的文件夹。</p>
+<p><img src="07.png"></p>
+<p>可用看到在该24524文件夹下面生成了一个blog的文件夹。</p>
+<p><img src="08.png"></p>
+<p>进入blog并查看路径。</p>
+<p><img src="09.png"></p>
+<p>但输入hexo init显示错误时，说明这里出现了问题，需要将git安装在环境变量中才行。</p>
+<p><img src="10.png"></p>
+<p>并在系统中配置好环境变量。</p>
+<p><img src="11.png"></p>
+<p>然后继续输入hexo init显示安装成功。</p>
+<p><img src="12.jpg"></p>
+<p>使用dir命令行查看目录。</p>
+<p><img src="13.png"></p>
+<p>可以看到hexo自动为你生成了一些东西。</p>
+<p><img src="14.jpg"></p>
+<p>安装git插件</p>
+<p><img src="15.jpg"></p>
+<p>接下来，用vscode打开_coniig.yml</p>
+<p><img src="16.jpg"></p>
+<p>在最后的段落添加如下的东西。</p>
+<p><img src="17.png"></p>
+<p>下一步就是部署到远端。</p>
+<p><img src="18.png"></p>
+<p>如出现以上的错误，需要取消代理以及设置git的config 和ssh.</p>
+<p><img src="19.png"><br><img src="20.png"><br><img src="21.png"></p>
+<p>输入以下命令行。</p>
+<p><img src="22.png"></p>
+<p>有如下显示则说明配置ssh成功。</p>
+<p><img src="23.png"></p>
+<p>用此方法下次就不用再输入github账号和密码了。</p>
+<p>但是当我第二天再次使用命令行hexo d时，显示如下错误</p>
+<p><img src="24.png"></p>
+<p>此时你只需要通过你设置的邮箱再次验证即可。<br>当github上显示验证成功即可再次推送。<br><img src="25.png"></p>
 
         </div>
         <!-- .entry-content -->
@@ -435,23 +468,23 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+        
           
-            <div class="post-nepre full previous">
+            <div class="post-nepre full next">
           
-            <a href="/2020/09/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev">
+            <a href="/2020/09/17/hello-world/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
               </div>
               <span class="label">
-              Previous Post</span>
+              Next Post</span>
               <div class="info">
                 <h3>
-                搭建个人博客</h3>
+                Hello World</h3>
                 <hr>
               </div>
             </a>
           </div>
-        
         
       </section>
       
